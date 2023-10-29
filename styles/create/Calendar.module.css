@@ -1,0 +1,298 @@
+.Time{
+    height: 35px;
+    width: max-content;
+    border: solid;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #9ed0ff;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    transition: border-color 0.3s;
+}
+.Time:hover{
+    border-color: #9d96ff;
+}
+.text_year{
+    font-size: 21px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #3db7ff;
+}
+.text_month{
+    font-size: 21px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #3db7ff;
+    margin-left: 10px;
+}
+.text_day{
+    font-size: 21px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #3db7ff;
+    margin-left: 10px;
+}
+.text_hour{
+    font-size: 21px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #3db7ff;
+    margin-left: 20px;
+}
+.text_minute{
+    font-size: 21px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #3db7ff;
+}
+.text{
+    font-size: 21px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #3db7ff;
+}
+.Calendar{
+
+     height: auto;
+     max-height: 250px;
+     background-color: rgba(174, 188, 255, 0.15);
+     backdrop-filter: blur(10px);
+     border-radius: 10px;
+     margin-top: 5px;
+     overflow: auto;
+     z-index: 1;
+ }
+.Calendar_out{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+}
+
+.Calendar_h{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    max-height: 250px;
+    background-color: rgba(174, 188, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-top: 5px;
+    z-index: 1;
+}
+.CalendarYear{
+     overflow: hidden;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+ }
+
+.CalendarMonth{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.CalendarDay{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.CalendarHour{
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    height: 250px;
+    align-items: center;
+
+}
+.month{
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+    font-family: Ubuntu-Medium,cursive;
+    font-size: 16px;
+    color: #9389ff;
+    transition: background-color 0.6s;
+}
+.month:hover{
+    background-color: rgba(179, 180, 255, 0.27);
+}
+.day{
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Ubuntu-Medium,cursive;
+    font-size: 16px;
+    color: #9389ff;
+    transition: background-color 0.6s;
+}
+.day:hover{
+    background-color: rgba(179, 180, 255,0.37);
+}
+.day_gost{
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Ubuntu-Medium,cursive;
+    font-size: 16px;
+    color: #bebdff;
+}
+.hour{
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Ubuntu-Medium,cursive;
+    font-size: 16px;
+    color: #8875ff;
+    transition: background-color 0.6s;
+}
+.hour:hover{
+    background-color: rgba(231, 228, 255, 0.76);
+}
+.hour_gost{
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Ubuntu-Medium,cursive;
+    font-size: 16px;
+    color: #b2a6ff;
+}
+.year{
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+    font-family: Ubuntu-Medium,cursive;
+    font-size: 18px;
+    color: #9389ff;
+    transition: background-color 0.6s;
+}
+.year:hover{
+    background-color: rgba(179, 180, 255, 0.27);
+}
+.Hour_list::-webkit-scrollbar {
+    display: none;
+}
+.Hour_list{
+    margin-top: 155px;
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80px;
+    transition:grid-template-rows 0.7s;
+    background-color: rgba(192, 201, 255, 0.89);
+    margin-left: 30px;
+    display: grid;
+    grid-template-rows: 0fr;
+}
+.Hour_list_in{
+    overflow: hidden;
+}
+.Hour_list_in_in{
+    overflow: auto;
+    max-height: 200px;
+}
+.Hour_div{
+    height: 50px;
+    width: 80px;
+    border-radius:10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #ffffff;
+    background-color: rgba(139, 157, 255, 0.47);
+}
+.Minute_div{
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: Ubuntu-Medium,cursive;
+    color: #ffffff;
+    background-color: rgba(139, 157, 255, 0.47);
+    cursor: pointer;
+
+}
+.Hour_list_in_in::-webkit-scrollbar {
+    display: none;
+}
+.Calendar::-webkit-scrollbar {
+    display: none;
+}
+.Minute_list{
+    margin-top: 155px;
+    position: absolute;
+    border-radius: 10px;
+    overflow: auto;
+    width: 80px;
+    transition:grid-template-rows 0.7s;
+    display: grid;
+    grid-template-rows: 0fr;
+    background-color: rgba(192, 201, 255, 0.89);
+    margin-left: 140px;
+}
+.text_h{
+    font-size: 35px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #3db7ff;
+    margin-top: -30px;
+    padding: 10px;
+}
+.cls{
+    fill: rgba(255, 255, 255, 0);
+    stroke: #8ba2ff;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:670px;
+    transition: stroke 0.4s;
+}
+.svg{
+    width: 20px;
+    height: 20px;
+    transform: rotate(0deg);
+    transition: transform 0.6s;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+.Hour_div_out{
+    margin-top: -30px;
+    background-color: rgba(175, 182, 255, 0.41);
+    border-radius: 10px;
+}
+.Hour_div_b{
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+}
+.svg_back{
+    width: 20px;
+    height: 20px;
+    transform: rotate(0deg);
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.svg_back:hover .cls{
+    stroke: #3f9aff;
+}

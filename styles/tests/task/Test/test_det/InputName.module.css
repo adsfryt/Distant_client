@@ -1,0 +1,106 @@
+.InputName{
+    background-color: white;
+    width: 850px;
+    margin: auto;
+    min-height: 100px;
+    padding-bottom: 15px;
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 40px;
+    transition:box-shadow 0.6s;
+}
+.OutputName{
+    background-color: white;
+    width: 850px;
+    margin: auto;
+    min-height: 100px;
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 40px;
+    transition:box-shadow 0.6s;
+}
+.div_text_head{
+    background-image: linear-gradient(90deg, #1089ff, #8e4cff);
+    width: 100%;
+    margin-top:0px;
+    height: 50px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.InputName:hover{
+    box-shadow: 0px 0px 30px 10px rgba(185, 212, 255, 0.75);
+}
+.OutputName:hover{
+    box-shadow: 0px 0px 30px 10px rgba(185, 212, 255, 0.75);
+}
+.text_head{
+    width: max-content;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left:25px;
+    padding-top: 10px;
+    background-color: white;
+    background-clip: text;
+    color: transparent;
+    font-family: Ubuntu-Medium, cursive;
+    text-decoration: none;
+}
+
+.div_text{
+    word-wrap:break-word;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.text{
+    font-size: 23px;
+    color:  #486dff;
+    margin-left: 20px;
+    font-family: Ubuntu-Medium, cursive;
+}
+.text_s{
+    font-size: 18px;
+    background-image: linear-gradient(45deg, #3882ff, #8c5aff);
+    background-clip: text;
+    color: transparent;
+    font-family: Ubuntu-Medium, cursive;
+    text-decoration: none;
+}
+.Input{
+    border:solid;
+    border-color: #5ca0ff;
+    border-width: 2px;
+    font-family: Srbija, cursive;
+    font-size: 20px;
+    color: #4b89ff;
+    padding-left: 20px;
+    outline: none;
+    width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 30px 30px 30px 30px;
+    padding-top: 3px;
+    height: 30px;
+    transition:  box-shadow 0.8s, border-color 0.4s , width 0.5s, margin-left 0.5s;
+}
+.Input::placeholder{
+    color: #8cb2ff;
+}
+.Input:focus{
+    width: 380px;
+
+    border-color: #2992ff;
+}
+@media screen and (max-width: 900px) {
+    .InputName{
+        width:calc(100% - 50px);
+    }
+    .OutputName{
+        width:calc(100% - 50px);
+    }
+    .Input:focus{
+        width: 320px;
+    }
+}

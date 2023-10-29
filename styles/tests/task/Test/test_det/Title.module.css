@@ -1,0 +1,32 @@
+.title{
+    height: max-content;
+    width: 960px;
+    min-height: 40px;
+    padding-top: 10px;
+    border-radius: 15px 15px 0px 0px;
+    border: solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #a3a7ff;
+    border-width:0px 0px 4px 0px;
+    background: linear-gradient(90deg, #3187ff 0%, #9996ff 100%)
+}
+.title_text{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #eeeeee;
+    font-family: 'Ubuntu-Medium', sans-serif;
+    font-size: 25px;
+}
+.description_text{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #eeeeee;
+    font-family: 'Ubuntu-Medium', sans-serif;
+    font-size: 18px;
+}
+@media screen and (max-width: 900px) {
+    .title{
+        width: calc(100% - 40px);
+    }
+}

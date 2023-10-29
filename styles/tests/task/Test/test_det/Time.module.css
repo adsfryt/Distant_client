@@ -1,0 +1,95 @@
+.Time{
+    background-color: white;
+    width: 850px;
+    max-width: 1400px;
+    margin: auto;
+    min-height: 100px;
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 40px;
+    transition:box-shadow 0.6s;
+}
+.Time:hover{
+    box-shadow: 0px 0px 30px 10px rgba(185, 212, 255, 0.75);
+}
+.div_text_head{
+    background-image: linear-gradient(90deg, #1089ff, #8e4cff);
+    width: 100%;
+    margin-top:0px;
+    height: 50px;
+    border-radius: 15px 15px 0px 0px;
+}
+.text_head{
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left:25px;
+    width: max-content;
+    padding-top: 10px;
+    background-color: white;
+    background-clip: text;
+    color: transparent;
+    font-family: Ubuntu-Medium, cursive;
+    text-decoration: none;
+}
+.div_text{
+    max-width: calc(100% - 80px);
+    word-wrap:break-word;
+    width: max-content;
+    margin-left:35px;
+    margin-top: 15px;
+}
+.text{
+    font-size: 19px;
+    color:  #486dff;
+    font-family: Ubuntu-Medium, cursive;
+}
+.text_s{
+    font-size: 18px;
+    margin-right: 10px;
+    background-image: linear-gradient(45deg, #3882ff, #8c5aff);
+    background-clip: text;
+    color: transparent;
+    font-family: Ubuntu-Medium, cursive;
+    text-decoration: none;
+}
+.texts{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: linear-gradient(45deg, #3882ff, #8c5aff);
+    background-clip: text;
+    color: transparent;
+    font-family: Ubuntu-Medium, cursive;
+    text-decoration: none;
+}
+.div_timeline{
+    background-color: #9fccff;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    height: 30px;
+}
+.under_div_timeline{
+    background-image: linear-gradient(45deg, #3882ff, #8c5aff);
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    height: 30px;
+}
+.time{
+    margin-right: 8px;
+}
+.par{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .Time{
+        width: calc(100% - 50px);
+    }
+    .par{
+        display: block;
+    }
+}

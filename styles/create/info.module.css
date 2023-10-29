@@ -1,0 +1,25 @@
+.cls1{fill: rgba(155, 154, 239, 0.48);}
+.cls2{fill:#fff;}
+.cls{
+    margin-left: 10px;
+    width: 20px;
+    cursor: pointer;
+}
+.content{
+    width: max-content;
+    max-width: 300px;
+    position: absolute;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: rgba(145, 139, 255, 0.57);
+}
+.content_text{
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Ubuntu-Medium,cursive;
+}
+.content_out{
+    margin-left: 10px;
+}

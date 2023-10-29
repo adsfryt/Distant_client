@@ -1,0 +1,133 @@
+.Center_in{
+    overflow: hidden;
+}
+.Center_in_in{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    height: 450px;
+}
+.Center_out{
+    height: 450px;
+}
+.Main{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+    background-color: rgba(159, 160, 255, 0.27);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Center{
+    width: 700px;
+    display:grid;
+    overflow: hidden;
+    grid-template-rows: 0fr;
+    background-color: white;
+    border-radius: 20px;
+    transition: grid-template-rows 0.7s;
+}
+.svg_redirect{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 60px;
+    transform: rotate(180deg);
+    transition: transform 0.7s;
+}
+.Back{
+    height: 50px;
+    width: max-content;
+    cursor: pointer;
+}
+.Back:hover .svg_redirect{
+    transform: translateX(-10px) rotate(180deg);
+}
+
+.cls{fill:none;stroke: #9e91ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:25px;}
+
+.Author_out{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Author{
+    width: 600px;
+    height: 350px;
+    overflow: auto;
+    padding-left:20px;
+    padding-right:20px;
+    border: solid 3px #a8a8ff;
+    border-radius: 10px;
+}
+.send_btn{
+    width: min-content;
+    margin: auto;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff;
+    border: 3px solid #8b80ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border 0.5s, background-color 0.5s, box-shadow 0.5s;
+}
+.send_btn:hover{
+    border: 3px solid #a2abff;
+    background-color: #a2abff;
+    box-shadow: 0px 0px 20px 0px rgba(155, 178, 255, 0.75);
+}
+.send_text{
+    color: #8f7fff;
+    font-size: 16px;
+    font-family: Ubuntu-Medium,cursive;
+    transition: color 0.5s;
+}
+.send_btn:hover .send_text{
+    color: #ffffff;
+}
+.text{
+    color: #90a1ff;
+    font-size: 19px;
+    font-family: Ubuntu-Medium,cursive;
+}
+.input_Name{
+    width: 200px;
+    outline: none;
+    background: none;
+    border: solid;
+    border-color: #7f8cff;
+    border-width: 0px 0px 3px 0px;
+    height: 30px;
+    margin-bottom: 20px;
+    padding-left:10px;
+    font-size: 26px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #8b86ff;
+    transition: border-color 0.8s;
+}
+.input_Name:focus{
+    border-color: #93beff;
+}
+.text_error{
+    color: #ff5348;
+    font-size: 12px;
+    margin: 0px;
+    margin-top: 10px;
+    font-family: Ubuntu-Medium,cursive;
+}
+.link{
+    color: #90a1ff;
+    font-size: 19px;
+    font-family: Ubuntu-Medium,cursive;
+}
+.code{
+    color: #90a1ff;
+    font-size: 19px;
+    font-family: Ubuntu-Medium,cursive;
+}

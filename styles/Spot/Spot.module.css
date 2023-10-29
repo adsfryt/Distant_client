@@ -1,0 +1,23 @@
+.Content{
+    height: 100%;
+    padding-bottom: 1px;
+}
+.title_text{
+    font-size: 39px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #9188ff;
+    text-align: center;
+}
+.text_download{
+    text-align: center;
+    cursor: pointer;
+    text-decoration-color: #3f9aff;
+    text-decoration: underline;
+    color: #4b89ff;
+    font-size: 20px;
+    font-family: Ubuntu-Medium,cursive;
+}
+.Content_in{
+    width: calc(100% - 80px);
+    margin-left: 80px;
+}

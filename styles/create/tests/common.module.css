@@ -1,0 +1,19 @@
+.Test{
+    width: calc(100% - 100px);
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    border: solid;
+    border-color: #a49cff;
+    border-width: 0px 0px 3px 0px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    overflow: hidden;
+
+}
+.Test_out{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition:grid-template-rows 0.6s;
+    overflow: hidden;
+}

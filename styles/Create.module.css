@@ -1,0 +1,347 @@
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: box-shadow 0.7s;
+    padding-bottom: 20px;
+}
+.content:hover{
+     box-shadow: 0px 0px 20px 10px rgba(185, 212, 255, 0.75);
+ }
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.main{
+    background-color: white;
+    overflow: hidden;
+}
+.title_text{
+    font-size: 24px;
+    color: #ffffff;
+    font-family: Ubuntu-Medium,cursive;
+    vertical-align: center;
+}
+.title_div{
+    overflow: hidden;
+    height: 50px;
+    border-radius: 0px;
+    background: linear-gradient(90deg, var(--c1) 0%, var(--c2) 100%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid #8b86ff;
+    border-bottom-width: 4px;
+}
+
+.name_text{
+    color: #8f7fff;
+    font-size: 16px;
+    font-family: Ubuntu-Medium,cursive;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    padding-bottom: 0px;
+}
+
+.row{
+    width: 100%;
+    margin-top: 20px;
+ }
+.row_in{
+    display: flex;
+    align-items: stretch;
+}
+
+.input_name{
+    width: 300px;
+    outline: none;
+    background: none;
+    border: solid;
+    border-color: #7f8cff;
+    border-width: 1.5px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left:10px;
+    font-size: 21px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #8b86ff;
+    transition: border-color 0.8s;
+}
+.input_name:focus{
+    border-color: #93beff;
+}
+
+.input_Name{
+    width: 400px;
+    outline: none;
+    background: none;
+    border: solid;
+    border-color: #7f8cff;
+    border-width: 1.5px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left:10px;
+    font-size: 26px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #8b86ff;
+    transition: border-color 0.8s;
+}
+.input_Name:focus{
+    border-color: #93beff;
+}
+
+.desc_text{
+    color: #ffffff;
+    margin: 0;
+    font-size: 23px;
+    font-family: Ubuntu-Medium,cursive;
+    text-align: center;
+}
+
+.textarea{
+    width: calc(100% - 12px);
+    resize: none;
+    margin-top: 10px;
+    outline: none;
+    margin-left: 2px;
+    padding-right: 0px;
+    padding-left: 8px;
+    padding-bottom: 0px;
+    border:none;
+    height: 240px;
+    border-radius: 0px 0px 8px 8px;
+    font-size: 21px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #85a4ff;
+    margin-bottom: -2px;
+    transition: box-shadow 0.8s;
+}
+.textarea:focus{
+    box-shadow: 0px 0px 20px 0px rgba(155, 178, 255, 0.75);
+}
+
+.row_desc{
+    width:100%;
+    padding-top: 10px;
+    margin-top: 20px;
+    background-color: #7f8cff;
+    border-radius: 10px;
+    height: max-content;
+}
+.chooseT{
+    width: auto;
+    float: left;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff;
+    border: 3px solid #8b80ff;
+    border-radius: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border 0.5s, background-color 0.5s, box-shadow 0.5s;
+}
+.chooseT:hover{
+    border: 3px solid #a2abff;
+    background-color: #a2abff;
+    box-shadow: 0px 0px 20px 0px rgba(155, 178, 255, 0.75);
+}
+.chose{
+    border: 3px solid #a2abff;
+    background-color: #a2abff;
+    box-shadow: 0px 0px 20px 0px rgba(200, 200, 255, 0.54);
+}
+.chose_text{
+    font-family: Ubuntu-Medium,cursive;
+    font-size: 19px;
+    color: #ffffff;
+}
+.cho_text{
+    font-family: Ubuntu-Medium,cursive;
+    font-size: 19px;
+    color: #9896ff;
+    transition: color 0.5s;
+}
+.chooseT:hover .cho_text{
+    color: #ffffff;
+}
+.add{
+    width: max-content;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: solid 3px #80a0ff;
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content:center;
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+.add:hover{
+    background-color: #80a0ff;
+}
+.add:hover .add_text{
+    color: #ffffff;
+}
+.add_text{
+    margin: 15px;
+    color: #9896ff;
+    transition: color 0.5s;
+    font-size: 21px;
+    font-family: Ubuntu-Medium, cursive;
+}
+
+.add_list{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition:grid-template-rows 0.5s;
+    overflow: hidden;
+}
+.add_content{
+    overflow: hidden;
+    width: 280px;
+    border-radius: 15px;
+    max-height: 600px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(133, 129, 255, 0.4);
+}
+.add_list_out{
+    transform: rotate(180deg);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -60px;
+    position: absolute;
+    width: 280px;
+    align-items: center;
+}
+.add_list_outer{
+    margin: auto;
+    width: 280px;
+}
+.addTask{
+    transform: rotate(180deg);
+    width:280px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.5s;
+}
+.addTask:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.add_textT{
+    margin: 15px;
+    font-family: Ubuntu-Medium,cursive;
+    font-size: 22px;
+    color: white;
+}
+.add_list_ou{
+    position: absolute;
+    width: 280px;
+}
+
+.input_date_year{
+     outline: none;
+     height: 30px;
+     max-height: 100px;
+     width: 46px;
+     padding-left: 4px;
+     background-color: rgba(255, 255, 255, 0);
+     border: solid;
+     border-width: 0px 0px 3px 0px;
+     border-color: #9eafff;
+     color: #84a8ff;
+     font-family: Ubuntu-Medium, cursive;
+     font-size: 20px;
+     resize: none;
+ }
+.input_date_short{
+    outline: none;
+    height: 30px;
+    max-height: 100px;
+    width: 23px;
+    padding-left: 4px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: #9eafff;
+    color: #84a8ff;
+    font-family: Ubuntu-Medium, cursive;
+    font-size: 20px;
+    resize: none;
+}
+.input_date_time{
+    outline: none;
+    height: 30px;
+    max-height: 100px;
+    width: 23px;
+    padding-left: 4px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: #9eafff;
+    color: #84a8ff;
+    font-family: Ubuntu-Medium, cursive;
+    font-size: 20px;
+    resize: none;
+}
+.input_date_hour{
+    outline: none;
+    height: 30px;
+    max-height: 100px;
+    width: 23px;
+    padding-left: 4px;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: #9eafff;
+    color: #84a8ff;
+    font-family: Ubuntu-Medium, cursive;
+    font-size: 20px;
+    resize: none;
+}
+
+.add_test{
+    width: max-content;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: solid 3px #80a0ff;
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content:center;
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+.add_test:hover{
+    background-color: #80a0ff;
+}
+.add_test:hover .add_text{
+    color: #ffffff;
+}
+@media screen and (max-width: 1300px) {
+    .content{
+        width: calc(100% - 40px);
+    }
+}

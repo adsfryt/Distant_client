@@ -1,0 +1,42 @@
+.list{
+    height: calc(100vh - 60px);
+    position: fixed;
+    width: 80px;
+    background-color: #f0f6ff;
+}
+.element{
+    overflow: hidden;
+    width: 80px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.element_out_b{
+    background-color: rgba(201, 221, 255, 0.27);
+}
+.cls1,.cls2{fill:none;stroke: #94b8ff;stroke-linecap:round;stroke-width:8px;     transition: filter 0.4s;}  .cls1{stroke-miterlimit:10;}  .cls2{stroke-linejoin:round;}
+.svg{
+    margin-top: 0px;
+    overflow: visible;
+    width: 50px;
+}
+.svg:hover .cls1, .svg:hover  .cls2{
+    filter: drop-shadow(0px 5px 8px rgba(171, 175, 255, 0.57));
+}
+.title_text{
+    margin-top: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #94b8ff;
+    transition: color 0.4s;
+    text-align: center;
+}
+.element_out:hover .title_text{
+    color: #b8a8ff;
+}
+.element_out{
+    overflow: hidden;
+}

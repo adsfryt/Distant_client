@@ -1,0 +1,101 @@
+.Content{
+    width: calc(100vw - 500px);
+    margin-left: 480px;
+}
+.text{
+    text-align: center;
+    font-size: 25px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #accbff;
+}
+.title_text{
+    text-align: center;
+    font-size: 30px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #b1b2ff;
+    margin-left: 10px;
+}
+
+.InputPoint_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputPoint{
+    outline: none;
+    height: 25px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid;
+    border-width:2px;
+    border-radius: 10px;
+    border-color: #4b89ff;
+    color: #84a8ff;
+    font-family: Ubuntu-Medium, cursive;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.inputPoint::placeholder{
+    color: rgba(122, 119, 255, 0.56);
+}
+.div_point{
+    width: max-content;
+    margin: auto;
+    height: 50px;
+}
+
+
+
+.text_div{
+    width: max-content;
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    transition: margin-top 0.6s;
+}
+
+.btn_div{
+    background-color: #4b47ff;
+    width: 250px;
+    height: 0px;
+    transition: height 0.6s;
+}
+
+.btn_out{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    width: 250px;
+    overflow: hidden;
+    height: 60px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color:white;
+    cursor: pointer;
+    border: solid;
+    border-color: #4b89ff;
+    border-width: 3px;
+    border-radius: 20px;
+    transition:box-shadow 0.6s;
+}
+.btn:hover{
+    box-shadow: 0px 0px 30px 10px rgba(185, 212, 255, 0.75);
+}
+.btn:hover .btn_div{
+    height: 60px;
+}
+.btn:hover .text_div{
+    margin-top: -60px;
+}
+.btn:hover .text_btn{
+    color: #ffffff;
+}
+.text_btn{
+    font-size: 19px;
+    font-family: Ubuntu-Medium, cursive;
+    color: #4b47ff;
+    transition: color 0.6s;
+}

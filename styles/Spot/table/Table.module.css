@@ -1,0 +1,122 @@
+.Table{
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    width: max-content;
+    background-color: rgba(239, 242, 255, 0.59);
+}
+.Title{
+    display: grid;
+    grid-template-columns: 195px 245px 195px 245px 195px 200px;
+}
+.TitleG{
+    display: grid;
+    border:solid;
+    border-width: 5px 0px 0px 0px;
+    border-color: #dfdbff;
+    grid-template-columns: 195px 245px 195px 245px 195px 200px;
+}
+.section{
+    font-size: 18px;
+    border:solid;
+    border-width: 0px 5px 0px 0px;
+    border-color: #dfdbff;
+    height: 40px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #3f9aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_last{
+    font-size: 18px;
+    height: 40px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #3f9aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputName{
+    outline: none;
+    height: 25px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid;
+    border-width:2px;
+    border-radius: 10px;
+    border-color: #4b89ff;
+    color: #84a8ff;
+    font-family: Ubuntu-Medium, cursive;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.inputName::placeholder{
+    color: rgba(132, 168, 255, 0.56);
+}
+.BtnName{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    font-family: Ubuntu-Medium,cursive;
+    font-size: 20px;
+    color: #eeeeee;
+    background-color: #8eb0ff;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BtnName_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.InputName_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div_name{
+    height: 50px;
+    display: grid;
+    grid-template-columns: 250px 150px;
+    border:solid;
+    border-width: 5px 0px 0px 0px;
+    border-color: #dfdbff;
+}
+.Content_in{
+    width: calc(100% - 80px);
+    margin-left: 80px;
+}
+@media screen and (max-width: 1400px) {
+    .TitleG{
+        grid-template-columns: 170px 220px 140px 180px 120px 110px;
+    }
+    .Title{
+        grid-template-columns: 170px 220px 140px 180px 120px 110px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .section{
+        font-size: 15px;
+    }
+    .section_last{
+        font-size: 15px;
+    }
+    .TitleG{
+        grid-template-columns: 140px 180px 90px 160px 90px 100px;
+    }
+    .Title{
+        grid-template-columns: 140px 180px 90px 160px 90px 100px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .Table{
+        display: none;
+    }
+}
+

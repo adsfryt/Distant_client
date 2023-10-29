@@ -1,0 +1,275 @@
+@property --c1 {
+    syntax: '<color>';
+    initial-value: #507fff;
+    inherits: false;
+}
+@property --c2 {
+    syntax: '<color>';
+    initial-value: #585cff;
+    inherits: false;
+}
+.center{
+    width: max-content;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 340px);
+    display: flex;
+
+}
+
+.Invite_out{
+    display: flex;
+}
+
+.Create{
+    background-color: #90a6ff;
+    width: 230px;
+    border-radius: 20px;
+    height: 66px;
+    margin-left: 50px;
+    display: flex;
+    cursor: pointer;
+    transition:  box-shadow 0.8s,background-color 0.8s ;
+}
+/*.Create:hover{*/
+/*    box-shadow: 0px 0px 15px 0px rgb(102, 151, 242);*/
+/*}*/
+
+.Invite{
+    border:solid;
+    border-color:   #90b0ff;
+    border-width: 3px;
+    font-family: Srbija, cursive;
+    font-size: 20px;
+    color: #4b89ff;
+    padding-left: 20px;
+    outline: none;
+    width: 300px;
+    text-transform:  uppercase;
+    border-radius: 20px 0px 0px 20px;
+    padding-top: 3px;
+    height: 54px;
+    transition:  box-shadow 0.8s, border-width 0.4s ease , width 0.5s, margin-left 0.5s;
+}
+.Invite::placeholder{
+    color: #8cb2ff;
+}
+.Invite:focus{
+    width: 380px;
+    margin-left: -40px;
+}
+.Invite:focus ~ .Create{
+    margin-left: 50px;
+}
+.svgsearch{
+    width: 50px;
+    margin-left: 20px;
+}
+.cles2{fill:none;stroke:var(--c1);stroke-miterlimit:10;stroke-width:10px; transition:--c1 0.6s; stroke-linecap:round;stroke-linejoin:round;}
+.cles1{fill:none;stroke:var(--c1);stroke-miterlimit:10;stroke-width:16px; transition:--c1 0.6s;stroke-linecap:round;stroke-linejoin:round; }
+.cls1{
+    fill:var(--c2);
+    transition: --c2 0.6s;
+}
+.svg{
+    width: 40px;
+    transition: transform 0.6s;
+    margin-left: 10px;
+}
+@font-face {
+    font-family:"arnamu";
+    src: local("arnamu"), url('./arnamu.ttf');
+}
+@font-face {
+    font-family:"Srbija";
+    src: local("Srbija"), url('./Srbija_Sans.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src:  local("Ubuntu-Medium"), url('./Ubuntu-Medium.ttf') ;
+}
+.text_create{
+    background-image: linear-gradient(90deg, #006bff, #7c15ff);
+    margin-left: 10px;
+    background-clip: text;
+    color: transparent;
+    margin-top: 23px;
+    font-family: "Srbija", cursive;
+    font-size: 21px;
+}
+.btn{
+    width: 100px;
+    cursor: pointer;
+    border: solid;
+    background-color: #e1ebff;
+    border-width: 3px 3px 3px 0px;
+    border-color: #90b0ff;
+    border-radius: 0px 20px 20px 0px;
+    height: 58px;
+
+}
+.btn:hover .svgsearch path {
+    --c1: #78aaff;
+}
+.Create:hover .svg path {
+    --c2: #747fff;
+}
+.Create:hover .svg {
+    transform: rotate(180deg);
+}
+@keyframes chgOpacity {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.top{
+    width:100%;
+    height: 70px;
+    border: solid;
+    border-width:0px 0px 0px 0px;
+    border-color: #c3afff;
+}
+
+.login{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 4px;
+    border-color: #bac3ff;
+    background-color: rgba(119, 210, 255, 0);
+    margin-top:15px;
+    right:290px;
+    cursor: pointer;
+    transition: border-color 0.4s;
+}
+.login:hover .text{
+    color: #ccf3ff;
+}
+.login:hover{
+    border-color: #ccf3ff;
+}
+.register{
+    position: absolute;
+    width: 240px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: rgba(140, 142, 255, 0);
+    margin-top:15px;
+    right:30px;
+    cursor: pointer;
+    transition:background-color 0.4s, border-color 0.4s;
+}
+.text{
+    color: #bac3ff;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Srbija", cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    transition:color 0.4s;
+}
+.text_reg{
+    color: #b8e3ff;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Srbija", cursive;
+    font-size: 20px;
+    margin-top: 14px;
+    transition:color 0.4s;
+}
+.register:hover .text_reg{
+    color: #ffffff;
+}
+.register:hover{
+    background-color : #9e97ff;
+}
+
+.text_user{
+    color: #b8e3ff;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-family: "Srbija", cursive;
+    font-size: 22px;
+
+}
+.text_user_div{
+    float: left;
+    width: max-content;
+}
+.user{
+    position: absolute;
+    width:max-content;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(140, 142, 255, 0);
+    margin-top:15px;
+    right:60px;
+    cursor: pointer;
+    transition:background-color 0.4s, border-color 0.4s;
+}
+.user:hover{
+    background-color: rgba(140, 145, 255, 0.51);
+}
+
+.user_image{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: #3132ff;
+    border-radius: 10px;
+    float: left;
+}
+@media screen and (max-width: 800px) {
+    .center{
+        width: 500px;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+    }
+    .Invite_out{
+        margin-top:100px;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Invite{
+        width: 200px;
+        margin-left: auto;
+    }
+    .Invite:focus{
+        width: 270px;
+        margin-left: auto;
+    }
+    .Create{
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+/*.error{*/
+/*    position: absolute;*/
+/*    border-radius: 20px;*/
+/*    background-image: linear-gradient(90deg, #ff2c7a, #ff6339);*/
+/*    width: 550px;*/
+/*    left: calc(50% - 275px);*/
+/*    top: 40%;*/
+/*    z-index: 1;*/
+/*    transition: transform 0.6s;*/
+/*    height:150px;*/
+
+/*}*/
+/*.text_error{*/
+/*    color: white;*/
+/*    margin-left: 10px;*/
+/*    margin-top: 30px;*/
+/*    text-align: center;*/
+/*    vertical-align: middle;*/
+/*    font-family: "Srbija", cursive;*/
+/*    font-size: 20px;*/
+/*}*/

@@ -1,0 +1,17 @@
+.title{
+    height: max-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 15px 15px 0px 0px;
+    border-width:0px 0px 4px 0px;
+    background: linear-gradient(30deg, #5b58ff 0%, #afb6ff 100%)
+}
+.title_text{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #eeeeee;
+    font-family: 'Ubuntu-Medium', sans-serif;
+    font-size: 25px;
+}

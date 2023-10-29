@@ -1,0 +1,290 @@
+{
+    "testId":"DVVNB-FVFVG-FVBBHG",+
+    "title":"Test1",+
+    "whiteList":[],
+    "blackList":[],
+    "urlUsers":[["FFDSRW","id of users"]],+
+    "urlGuests":[["FFDSRW","name"]],+
+    "stared":["FFDSRW"],+
+    "passed":["FFDSRF"],+
+    "descriptionPersonal":[["FFDSRF","This test for you"]],
+    "description":"This is test!",+
+    "addTime": "2023-04-12T02:00:00.000Z",+
+    "startTime": "2023-04-27T02:00:00.000Z",+
+    "endTime": "2023-05-30T02:00:00.000Z",+
+    "timeS":600,+
+    "publicTest":1,
+    "maxUsers":44,
+    "isPaused":0, //можно ли поставить на паузу
+    "author":"anonymos",
+    "currentLanguage":"English",+
+    "language":["English", "Ukranian"],+
+    "strickMode":0, //при строгом режиме нельзя закрывать браузер или переходить на другие страницы, иначе об этом сообщит учителю
+    "publicResult":0, //показать ученику процентное соотношение, того сколько людей правильно ответило в каждом вопросе и (в некоторых вопросах, где такое возможно сделать) показать, то сколько людей выбрало тот или иной вариант ответа
+    "saveAnswer":0, //сохранять ответ
+    "editAnswer":1, //редактировать ответ
+    "showAnswer":1, //0 сразу во время теста, 1 после прохожения теста, 2 после окончания времени, 3 как только автор проверит, 4 никогда
+    "showAnswerWithDescription":1, // 1 подробно рассписать ответ, 0 вывести только балл за ответ , если "showAnswer":3 и это поле 1 то покажет только баллы после окончания времени
+    "pageTest":0, //тест в виде списка или по странично
+    "attempts":1, //попытки
+    "mixed":1 //перемешиать ли вопросы
+    "solveStepbyStep":0, //при 1 можно решать только по порядку, при 0 можно решать все подряд
+    "tests":[
+        [
+            1,//тип
+            1,//id
+            "title",
+            "description",
+            "clue",
+            ["nameVariants1", "nameVariants2", "nameVariants3"],
+            ["descriptionVariants1", "descriptionVariants2", "descriptionVariants3"],
+            [1,0,1],//номера правильного ответа
+            [
+                1, //есть ли здесь элементы
+                [1,0.25,1], //баллы за каждый ответ
+                "0.25", //наказание за выбор неправильного ответа если inf то все баллы отнимаем
+                "0.25", //наказание за не выбор правильного ответа если inf то все баллы отнимаем
+                1,//перемешивать ли варианты
+                1, //сколько макс. можно выбрать и если 0 то можно выбирать сколько угодно
+                0 //сколько мин. можно выбрать
+            ],
+            1,//перемешивать ли варианты
+            [
+                1, //есть ли здесь элементы
+                [0.5,1],//баллы за каждый правильный ответ
+                 0.25 //наказание за выбор неправильного ответа если -1 то все баллы отнимаем
+            ]
+        ],
+        [
+            2,//тип
+            2,//id
+            "title",
+            "description",
+            "clue",
+            ["nameVariants1", "nameVariants2"],
+            ["descriptionVariants1", "descriptionVariants2"],
+            1, //номер правильного ответа
+            [1,0.25],
+            1 //перемешивать ли варианты
+        ]        
+    ],
+    "translate":{
+        "head":[
+            [ 
+                "Test1",
+                "This is test!"
+            ],
+            [ 
+                "Test1",
+                "This is test!"
+            ]
+        ],
+        "tests":[
+            [
+                [
+                    "title",
+                    "description",
+                    "clue",
+                    ["nameVariants1", "nameVariants2", "nameVariants3"],
+                    ["descriptionVariants1", "descriptionVariants2", "descriptionVariants3"]
+                ],
+                [
+                    "title",
+                    "description",
+                    "clue",
+                    ["nameVariants1", "nameVariants2"],
+                    ["descriptionVariants1", "descriptionVariants2"]
+                ]
+            ],
+            [
+                [
+                    "title",
+                    "description",
+                    "clue",
+                    ["nameVariants1", "nameVariants2", "nameVariants3"],
+                    ["descriptionVariants1", "descriptionVariants2", "descriptionVariants3"]
+                ],
+                [
+                    "title",
+                    "description",
+                    "clue",
+                    ["nameVariants1", "nameVariants2"],
+                    ["descriptionVariants1", "descriptionVariants2"]
+                ]
+            ]
+        ]
+    },
+    "checkTest":1, //проверить ли тест автоматично или отправить учителю
+    "marksOutput": 1, //если 0, то баллы отправятся учителю без изменений, если 1, то по marksDegree будет выставлятся, если 2, то выведет по systemMarks
+    "systemMarks":[2,5],
+    "marksDegree":[ 
+        [2,1], //оценка, балл
+        [3,2],
+        [4,3],
+        [5,4]
+    ],
+    "results":[
+        [1,2,"FFJ24F",456,[
+		[1,[1,0,0],23], // тип, ответы, время с последнего написания ответа
+		[2,[0,0],67]
+		]
+       ] // баллы, оценка, код, время, ответы ученика
+    ]
+}
+// если хоть один человек начал, то изменить тест уже нельзя
+
+
+
+
+
+{
+    "testId":"AAAAA-AAAAA-AAAAAC",
+    "urlGuests":[["DI2K6PXEKB2","Nikita"],["NIG521NRQAV","DGFF"],["QVPXP6662OO","DFGG"],["AUZVK927IN7","SDDFF"]],
+    "started":[["NIG521NRQAV","Fri Aug 04 2023 16:31:10 GMT+0300 (Москва, стандартное время)"],["QVPXP6662OO","Fri Aug 04 2023 16:31:22 GMT+0300 (Москва, стандартное время)"],["AUZVK927IN7","Fri Aug 04 2023 16:38:13 GMT+0300 (Москва, стандартное время)"]],
+    "passed":["AUZVK927IN7","Fri Aug 04 2023 20:23:39 GMT+0300 (Москва, стандартное время)"],
+    "answer":[
+       {
+            "type":1,
+            "id":1,
+	    "answers":[[ //все виды ответов
+		{
+		  "ids":0,  //id варианта
+            	  "answer":0,  // правильный или нет
+            	  "points":0  // баллы за него
+		},
+		{
+		  "ids":1,
+            	  "answer":0,
+            	  "points":0
+		},
+		{
+		  "ids":2,
+            	  "answer":1,
+            	  "points":1
+		},
+		{
+		  "ids":3,
+            	  "answer":0,
+            	  "points":0
+		}]
+	    ]
+            "mixed":0,//перемешивать ли варианты
+            "maxChoice":1, //сколько макс. можно выбрать и если -1 то можно выбирать сколько угодно
+            "minChoice":0, //сколько мин. можно выбрать
+            "underSelection":0, //наказание за не выбор правильного ответа если inf то все баллы отнимаем
+            "wrongSelection":0 //наказание за выбор неправильного ответа если inf то все баллы отнимаем
+        },
+        {
+            "type":1,
+            "id":2,
+	    "answers":[[
+		{
+		  "ids":0,
+            	  "answer":0,
+            	  "points":0
+		},
+		{
+		  "ids":1,
+            	  "answer":0,
+            	  "points":0
+		},
+		{
+		  "ids":2,
+            	  "answer":1,
+            	  "points":1
+		},
+		{
+		  "ids":3,
+            	  "answer":0,
+            	  "points":0
+		}]
+	    ]
+            "mixed":1,
+            "maxChoice":1,
+            "minChoice":0,
+            "underSelection":0,
+            "wrongSelection":0
+
+        }
+    ]
+}
+
+
+
+
+
+{
+    "testId":"AAAAA-AAAAA-AAAAAC",
+    "title":"Тест по биологии",
+    "description":"Пройти этот тест до августа",
+    "author":"64678c05fbdae6e1a3780e4a",
+    "currentLanguage":"English",
+    "language":["English","Ukranian"],
+    "strickMode":0,
+    "publicResult":0,
+    "saveAnswer":1,
+    "editAnswer":1,
+    "showAnswer":1,
+    "pageTest":0,
+    "attempts":1,
+    "addTime": "2023-06-31T02:00:00.000Z",
+    "startTime": "2023-07-07T02:00:00.000Z",
+    "endTime": "2023-08-30T02:00:00.000Z",
+    "timeS":146000,
+    "tests":[{
+        "type":1,
+        "id":1,
+        "title":"Какая наука изучает ископаемые остатки вымерших организмов?",
+        "description":"description",
+        "Variants":[
+                {
+                    "id":1,
+                    "title":"систематика",
+                    "description":""
+                },
+                {
+                    "id":2,
+                    "title":"генетика",
+                    "description":""
+                },
+                {
+                    "id":3,
+                    "title":"эмбриология",
+                    "description":""
+                },
+                {
+                    "id":4,
+                    "title":"палеонтология",
+                    "description":""
+                }
+            ]},
+        {
+            "type":1,
+            "id":2,
+            "title":"Какое свойство характерно для живых тел природы – организмов, в отличие от объектов неживой природы?",
+            "description":"description",
+            "Variants":[
+                {
+                    "id":1,
+                    "title":"ритмичность",
+                    "description":""
+                },
+                {
+                    "id":2,
+                    "title":"раздражимость",
+                    "description":""
+                },
+                {
+                    "id":3,
+                    "title":"движение",
+                    "description":""
+                },
+                {
+                    "id":4,
+                    "title":"рост",
+                    "description":""
+                }
+            ]
+        }
+    ]
+}

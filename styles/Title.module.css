@@ -1,0 +1,48 @@
+@property --c1 {
+    syntax: '<color>';
+    initial-value: #4b89ff;
+    inherits: false;
+}
+
+@property --c2 {
+    syntax: '<color>';
+    initial-value: #9875ff;
+    inherits: false;
+}
+
+.title{
+    width: 100%;
+    height: max-content;
+    min-height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    top:0px;
+    border: solid;
+    border-color: #a3a7ff;
+    border-width:0px 0px 4px 0px ;
+    animation: chgColor 5s infinite;
+    background: linear-gradient(90deg, var(--c1) 0%, var(--c2) 100%)
+
+}
+@keyframes chgColor {
+    0%{
+        --c2: #9875ff;
+        --c1: #4b89ff;
+    }
+    50%{
+        --c2: #3db7ff;
+        --c1: #865fff;
+    }
+    100%{
+        --c2: #9875ff;
+        --c1: #4b89ff;
+    }
+}
+.title_text{
+    text-align: center;
+    margin: auto;
+    color: #eeeeee;
+    font-family: 'Ubuntu-Medium', sans-serif;
+    font-size: 35px;
+}

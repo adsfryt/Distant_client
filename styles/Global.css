@@ -1,0 +1,76 @@
+@property --c1 {
+    syntax: '<color>';
+    initial-value: #4c50ff;
+    inherits: false;
+}
+
+@property --c2 {
+    syntax: '<color>';
+    initial-value: #a35bff;
+    inherits: false;
+}
+
+html{
+    height: 100%;
+    margin: 0;
+}
+@font-face {
+    font-family:"Srbija";
+    src: local("Srbija"), url('./Srbija_Sans.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src:  local("Ubuntu-Medium"), url('./Ubuntu-Medium.ttf') ;
+}
+@font-face {
+    font-family:"arnamu";
+    src: local("arnamu"), url('./arnamu.ttf')  format('truetype');
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+
+.main{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, var(--c1) ,  var(--c2));
+    animation: chgColor 5s infinite;
+}
+
+@media screen and (max-width: 800px) {
+    .main{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+#__next{
+
+    margin: 0px;
+}
+
+.uu{
+    border-radius: 40px;
+}
+@keyframes chgColor {
+    0%{
+        --c1: #4c50ff;
+        --c2: #a35bff;
+    }
+    50%{
+        --c2: #9a6aff;
+        --c1: #397aff;
+    }
+    100%{
+        --c1: #4c50ff;
+        --c2: #a35bff;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

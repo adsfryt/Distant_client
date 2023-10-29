@@ -1,0 +1,46 @@
+.panel{
+    position: absolute;
+    right: 60px;
+    width: max-content;
+    margin-top: 70px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.4s;
+}
+.panel_content{
+    overflow: hidden;
+}
+
+
+.line{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.56);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.7s;
+    margin: 0 auto;
+}
+.line:hover{
+    background-color: rgba(238, 238, 238, 0.88);
+}
+.line_div{
+    padding-left:30px;
+    padding-right:30px;
+    margin: 0 auto;
+    width:max-content;
+}
+
+.line_text{
+    font-size: 20px;
+    font-family: Ubuntu-Medium, cursive;
+    color: #4c50ff;
+}
+.line_text_logout{
+    font-size: 20px;
+    font-family: Ubuntu-Medium, cursive;
+    color: #ff0000;
+}

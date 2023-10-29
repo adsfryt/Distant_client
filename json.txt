@@ -1,0 +1,144 @@
+{     "testId":"AAAAA-AAAAA-AAAAAC",     "name": "Name",     "urlGuests": "" }
+
+
+{
+    "testId":"AAAAA-AAAAA-AAAAAC",
+    "urlGuests":[["DI2K6PXEKB2","Nikita"],["NIG521NRQAV","DGFF"],["QVPXP6662OO","DFGG"],["AUZVK927IN7","SDDFF"]],
+    "started":[["NIG521NRQAV","Fri Aug 04 2023 16:31:10 GMT+0300 (Москва, стандартное время)"],["QVPXP6662OO","Fri Aug 04 2023 16:31:22 GMT+0300 (Москва, стандартное время)"],["AUZVK927IN7","Fri Aug 04 2023 16:38:13 GMT+0300 (Москва, стандартное время)"]],
+    "passed":["AUZVK927IN7","Fri Aug 04 2023 20:23:39 GMT+0300 (Москва, стандартное время)"],
+    "answer":[
+        {
+            "type":1,
+            "id":1,
+            ""
+
+        }
+    ]
+    }
+
+
+
+{
+    "testId":"AAAAA-AAAAA-AAAAAC",
+    "urlGuests":[["DI2K6PXEKB2","Nikita"],["NIG521NRQAV","DGFF"],["QVPXP6662OO","DFGG"],["AUZVK927IN7","SDDFF"]],
+    "started":[["NIG521NRQAV","Fri Aug 04 2023 16:31:10 GMT+0300 (Москва, стандартное время)"],["QVPXP6662OO","Fri Aug 04 2023 16:31:22 GMT+0300 (Москва, стандартное время)"],["AUZVK927IN7","Fri Aug 04 2023 16:38:13 GMT+0300 (Москва, стандартное время)"]],
+    "passed":["AUZVK927IN7","Fri Aug 04 2023 20:23:39 GMT+0300 (Москва, стандартное время)"],
+    "answer":[
+       {
+            "type":1,
+            "id":1,
+            "answers":[[
+            {
+            "ids":0, 
+                    "answer":0, 
+                    "points":0 
+            },
+            {
+            "ids":1,
+                    "answer":1,
+                    "points":1
+            },
+            {
+            "ids":2,
+                    "answer":0,
+                    "points":0
+            },
+            {
+            "ids":3,
+                    "answer":0,
+                    "points":0
+            }]
+            ],
+            "mixed":0,
+            "maxChoice":1,
+            "minChoice":0,
+            "underSelection":"inf",
+            "wrongSelection":"inf"
+        },
+        {
+            "type":1,
+            "id":2,
+            "answers":[[
+            {
+            "ids":0,
+                    "answer":0,
+                    "points":0
+            },
+            {
+            "ids":1,
+                    "answer":0,
+                    "points":0
+            },
+            {
+            "ids":2,
+                    "answer":1,
+                    "points":1
+            },
+            {
+            "ids":3,
+                    "answer":0,
+                    "points":0
+            }]
+            ],
+            "mixed":1,
+            "maxChoice":1,
+            "minChoice":0,
+            "underSelection":"inf",
+            "wrongSelection":"inf"
+
+        }
+    ]
+    }
+
+
+
+
+{
+    "testId":"AAAAA-AAAAA-AAAAAC",
+    "URLs":"NIG521NRQAV",
+    "answer":[
+       {
+            "type":1,
+            "id":0,
+            "answers":[
+            {
+                    "ids":0, 
+                    "answer":0
+            },
+            {
+                    "ids":1,
+                    "answer":1
+            },
+            {
+                    "ids":2,
+                    "answer":0
+            },
+            {
+                    "ids":3,
+                    "answer":0
+            }]
+        },
+        {
+            "type":1,
+            "id":0,
+            "answers":[
+            {
+                    "ids":0, 
+                    "answer":0
+            },
+            {
+                    "ids":1,
+                    "answer":0
+            },
+            {
+                    "ids":2,
+                    "answer":1
+            },
+            {
+                    "ids":3,
+                    "answer":0
+            }]
+        }
+    ]
+}
+node testa.js

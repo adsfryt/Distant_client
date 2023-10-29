@@ -1,0 +1,99 @@
+{
+    "testId":"DVVNB-FVFVG-FVBBHG",+
+    "title":"Test1",+
+    "description":"This is test!",+
+    "addTime": "2023-04-12T02:00:00.000Z",+
+    "startTime": "2023-04-27T02:00:00.000Z",+
+    "endTime": "2023-05-30T02:00:00.000Z",+
+    "timeS":600,+
+    "publicTest":1,
+    "maxUsers":44,
+    "isPaused":0, //можно ли поставить на паузу
+    "author":"anonymos",
+    "currentLanguage":"English",+
+    "language":["English", "Ukranian"],+
+    "strickMode":0, //при строгом режиме нельзя закрывать браузер или переходить на другие страницы, иначе об этом сообщит учителю
+    "publicResult":0, //показать ученику процентное соотношение, того сколько людей правильно ответило в каждом вопросе и (в некоторых вопросах, где такое возможно сделать) показать, то сколько людей выбрало тот или иной вариант ответа
+    "saveAnswer":0, //сохранять ответ
+    "editAnswer":1, //редактировать ответ
+    "showAnswer":1, //0 сразу во время теста, 1 после прохожения теста, 2 после использования всех попыток, 3 после окончания времени, 4 никогда
+    "pageTest":0, //тест в виде списка или по странично
+    "attempts":1, //попытки
+    "solveStepbyStep":0, //при 1 можно решать только по порядку, при 0 можно решать все подряд
+    "tests":[
+        [
+            1,//тип
+            1,//id
+            "title",
+            "description",
+            "clue",
+            ["nameVariants1", "nameVariants2", "nameVariants3"],
+            ["descriptionVariants1", "descriptionVariants2", "descriptionVariants3"]
+        ],
+        [
+            2,//тип
+            2,//id
+            "title",
+            "description",
+            "clue",
+            ["nameVariants1", "nameVariants2"],
+            ["descriptionVariants1", "descriptionVariants2"],
+        ]        
+    ],
+    "translate":{
+        "head":[
+            [ 
+                "Test1",
+                "This is test!"
+            ],
+            [ 
+                "Test1",
+                "This is test!"
+            ]
+        ],
+        "tests":[
+            [
+                [
+                    "title",
+                    "description",
+                    "clue",
+                    ["nameVariants1", "nameVariants2", "nameVariants3"],
+                    ["descriptionVariants1", "descriptionVariants2", "descriptionVariants3"]
+                ],
+                [
+                    "title",
+                    "description",
+                    "clue",
+                    ["nameVariants1", "nameVariants2"],
+                    ["descriptionVariants1", "descriptionVariants2"]
+                ]
+            ],
+            [
+                [
+                    "title",
+                    "description",
+                    "clue",
+                    ["nameVariants1", "nameVariants2", "nameVariants3"],
+                    ["descriptionVariants1", "descriptionVariants2", "descriptionVariants3"]
+                ],
+                [
+                    "title",
+                    "description",
+                    "clue",
+                    ["nameVariants1", "nameVariants2"],
+                    ["descriptionVariants1", "descriptionVariants2"]
+                ]
+            ]
+        ]
+    },
+    "checkTest":1, //проверить ли тест автоматично или отправить учителю
+    "marksOutput": 1, //если 0, то баллы отправятся учителю без изменений, если 1, то по marksDegree будет выставлятся, если 2, то выведет по systemMarks
+    "systemMarks":[2,5],
+    "marksDegree":[ 
+        [2,1], //оценка, балл
+        [3,2],
+        [4,3],
+        [5,4]
+    ]
+}
+// если хоть один человек начал, то изменить тест уже нельзя

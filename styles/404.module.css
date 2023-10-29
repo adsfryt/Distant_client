@@ -1,0 +1,75 @@
+.text_link{
+    font-size: 25px;
+    background-image: linear-gradient(90deg, #006bff, #9149ff);
+    background-clip: text;
+    color: transparent;
+    font-family: Ubuntu-Medium, cursive;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 13px;
+    position: absolute;
+}
+.text_head{
+    font-size: 30px;
+    background-image: linear-gradient(90deg, #006bff, #9149ff);
+    background-clip: text;
+    color: transparent;
+    font-family: Ubuntu-Medium, cursive;
+    text-decoration: none;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+}
+.text_404{
+    font-size: 100px;
+    background-image: linear-gradient(90deg, #2773ff, #8253ff);
+    background-clip: text;
+    color: transparent;
+    font-family: Ubuntu-Medium, cursive;
+    text-decoration: none;
+    position: absolute;
+    top: calc(50% - 340px);
+    left: calc(50% - 80px);
+
+}
+.text_link:visited{
+    text-decoration: none;
+}
+.div_link{
+    width: 420px;
+    height: 60px;
+    vertical-align: middle;
+    position: absolute;
+    display: flex;
+    top: calc(50% - 30px);
+    left: calc(50% - 210px);
+    transition: box-shadow 0.7s;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+}
+.div_link::after {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 70px;
+    top: -5px;
+    left: -5px;
+    background: linear-gradient(45deg, #006dff, #a44fff);
+    border-radius: 20px;
+    z-index: -1;
+}
+.svg_redirect{
+    margin-left: 305px;
+    width: 70px;
+    transition: transform 0.7s;
+}
+
+.div_link:hover .svg_redirect{
+    transform: translateX(30px);
+}
+.div_link:hover .svg_redirect{
+    transform: translateX(30px);
+}
+.cls{fill:none;stroke: #a358ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:25px;}
+

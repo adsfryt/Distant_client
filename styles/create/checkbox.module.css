@@ -1,0 +1,94 @@
+@property --strike_dash {
+    syntax: '<number>';
+    initial-value: 30;
+    inherits: false;
+}
+
+
+.check_box{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    margin-top: -1px;
+    margin-left: 10px;
+}
+.check_boxls{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+.checkmark{
+    display:block;
+    border: solid;
+    border-color: #4b47ff;
+    border-radius: 7px;
+    margin-left: 10px;
+    margin-top: 14px;
+    height: 25px;
+    border-width:3px;
+    width: 25px;
+    min-width: 25px;
+    background-color: var(--myColor5);
+}
+.checkmark:after {
+    display: block;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.yes_line {
+    fill:none;
+    stroke: #677bff;
+    stroke-dasharray:30;
+    stroke-dashoffset: var(--strike_dash);
+    transition:--strike_dash 0.5s;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:3px;
+}
+.check_box:checked ~ .checkmark .yes .yes_line{
+    --strike_dash: 0;
+}
+
+.check_boxls:checked ~ .checkmark .yes .yes_line{
+    --strike_dash: 0;
+}
+
+.yes{
+    margin-left: 3px;
+}
+.labells{
+    float: left;
+}
+.inputNumber{
+    outline: none;
+    height: 25px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 14px;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid;
+    border-width:2px;
+    border-radius: 5px;
+    border-color: #4b89ff;
+    color: #84a8ff;
+    font-family: Ubuntu-Medium, cursive;
+    font-size: 18px;
+    padding-left: 10px;
+
+}
+.inputNumber::placeholder{
+    color: rgba(132, 168, 255, 0.56);
+}

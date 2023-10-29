@@ -1,0 +1,29 @@
+.Content{
+    width:400px;
+    margin-left: 80px;
+    overflow: auto;
+    position: fixed;
+    height: calc(100vh - 65px);
+    background-color: rgba(207, 215, 255, 0.59);
+}
+.title_text{
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Ubuntu-Medium,cursive;
+    color: #b1b2ff;
+    margin-left: 10px;
+}
+.div_user{
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.div_user:hover{
+    background-color: rgba(180, 183, 255, 0.14);
+}
+.name_text{
+    color: #699bff;
+}

@@ -1,0 +1,343 @@
+@property --strike_dash {
+    syntax: '<number>';
+    initial-value: 30;
+    inherits: false;
+}
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #ffffff;
+    inherits: false;
+}
+
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: #ffffff;
+    inherits: false;
+}
+
+@property --myColor3 {
+    syntax: '<color>';
+    initial-value: #4b47ff;
+    inherits: true;
+}
+@property --myColor4 {
+    syntax: '<color>';
+    initial-value: #6cabff;
+    inherits: true;
+}
+
+@property --myColor5 {
+    syntax: '<color>';
+    initial-value: rgb(241, 246, 255);
+    inherits: true;
+}
+
+.right_div{
+    margin-left: 10px;
+    font-family: Calibri;
+    display:block;
+    width: 100%;
+    min-height: 60px;
+    padding: 0px;
+    padding-right: 25px;
+    transition: 0.5s;
+}
+.right_div:hover{
+    padding-left:20px;
+    padding-right: 5px;
+}
+
+.title{
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.title_text{
+    font-size: 22px;
+    font-family: 'Ubuntu-Medium', sans-serif;
+    color: var(--myColor3);
+    margin: 0px;
+}
+.check_box{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+.checkmark{
+    display:block;
+    border: solid;
+    border-color: #4b47ff;
+    border-radius: 7px;
+    margin-left: 10px;
+    margin-top: 14px;
+    height: 25px;
+    border-width:3px;
+    width: 25px;
+    min-width: 25px;
+    background-color: var(--myColor5);
+}
+.yes_line {
+    fill:none;
+    stroke: #677bff;
+    stroke-dasharray:30;
+    stroke-dashoffset: var(--strike_dash);
+    transition:--strike_dash 0.5s;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:3px;
+}
+.check_box:checked ~ .checkmark .yes .yes_line{
+    --strike_dash: 0;
+}
+
+.yes{
+    margin-left: 3px;
+}
+.checkmark:after {
+    display: block;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.Variants{
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    min-width: 400px;
+    transition: --myColor1 0.5s, --myColor2 0.5s, --myColor3 0.5s,--myColor4 0.5s, --myColor5 0.5s;
+    background: linear-gradient(90deg, var(--myColor1), var(--myColor2));
+}
+.Variants:hover{
+    --myColor1:#3187ff;
+    --myColor2: #9996ff;
+    --myColor3: #aff7ff;
+    --myColor4: #a1d3ff;
+    --myColor5: #ffffff;
+}
+.Variants_end{
+    cursor: pointer;
+    width: 100%;
+    min-width: 400px;
+    display: flex;
+    transition: --myColor1 0.5s, --myColor2 0.5s, --myColor3 0.5s,--myColor4 0.5s, --myColor5 0.5s;
+    background: linear-gradient(90deg, var(--myColor1), var(--myColor2));
+    border-radius: 0px 0px 15px 15px;
+}
+.Variants_end:hover{
+    --myColor1:#3187ff;
+    --myColor2: #9996ff;
+    --myColor3: #aff7ff;
+    --myColor4: #aff7ff;
+    --myColor5: #ffffff;
+}
+
+.description{
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.description_text{
+    font-size: 15px;
+    color:var( --myColor4);
+    font-family:'Ubuntu-Medium', sans-serif;
+    margin: 0px;
+}
+
+
+
+.text{
+    font-size: 19px;
+    font-family: Ubuntu-Medium, cursive;
+    color: #4b47ff;
+    transition: color 0.6s;
+}
+.text_div{
+    width: max-content;
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    transition: margin-top 0.6s;
+}
+.btn_div{
+    background-color: #4b47ff;
+    width: 250px;
+    height: 0px;
+    transition: height 0.6s;
+
+}
+.btn{
+    width: 250px;
+    overflow: hidden;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: calc(50% - 125px);
+    margin-bottom: 30px;
+    background-color:white;
+    cursor: pointer;
+    border: solid;
+    border-color: #4b89ff;
+    border-width: 3px;
+    border-radius: 20px;
+    transition:box-shadow 0.6s;
+}
+.btn:hover{
+    box-shadow: 0px 0px 30px 10px rgba(185, 212, 255, 0.75);
+}
+.btn:hover .btn_div{
+    height: 60px;
+}
+.btn:hover .text_div{
+    margin-top: -60px;
+}
+.btn:hover .text{
+    color: #ffffff;
+}
+
+@media screen and (max-width: 900px){
+    .btn:hover .btn_div{
+        height: 0px;
+    }
+    .btn:hover .text_div{
+        margin-top: 0;
+    }
+    .btn:hover .text{
+        color: #4b47ff;
+    }
+    .btn:hover{
+        box-shadow: 0px 0px 0px 0px rgba(185, 212, 255, 0);
+    }
+    .Variants:hover{
+        --myColor1: #ffffff;
+        --myColor2: #ffffff;
+        --myColor3: #4b47ff;
+        --myColor4: #6cabff;
+        --myColor5: #ffffff;
+    }
+    .Variants_end:hover{
+        --myColor1: #ffffff;
+        --myColor2: #ffffff;
+        --myColor3: #4b47ff;
+        --myColor4: #6cabff;
+        --myColor5: #ffffff;
+    }
+}
+
+
+.text_div_save{
+    width: max-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn_save{
+    width: 200px;
+    overflow: hidden;
+    height: 40px;
+    margin-left: calc(50% - 100px);
+    background-color:white;
+    cursor: pointer;
+    display: flex;
+    border: solid;
+    border-color: #778eff;
+    border-width: 3px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: -10px;
+    margin-bottom:30px;
+    transition:box-shadow 0.7s, background-color 0.7s;
+}
+.btn_save:hover{
+    background-color: #778eff;
+    box-shadow: 0px 0px 30px 10px rgba(185, 212, 255, 0.75);
+}
+.btn_save:hover .text{
+    color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+    .btn_save:hover .text{
+        color: #4b47ff;
+    }
+    .btn_save:hover{
+        background-color: #ffffff;
+        box-shadow: 0px 0px 0px 0px rgba(185, 212, 255, 0);
+    }
+
+}
+
+
+
+
+
+
+.yes_before{
+    height: 25px;
+    width: 25px;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+.yes_line_true_r {
+    fill:none;
+    stroke: #00ff00;
+    stroke-dasharray:30;
+    stroke-dashoffset: var(--strike_dash);
+    transition:--strike_dash 0.5s;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:3px;
+    --strike_dash: 0;
+}
+.yes_line_true_w {
+    fill:none;
+    stroke: #ff0000;
+    stroke-dasharray:30;
+    stroke-dashoffset: var(--strike_dash);
+    transition:--strike_dash 0.5s;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:3px;
+    --strike_dash: 0;
+}
+.yes_line_false_r{
+    fill:none;
+    stroke: #00ff00;
+    stroke-dasharray:30;
+    --strike_dash: 0;
+    stroke-dashoffset: var(--strike_dash);
+    transition:--strike_dash 0.5s;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:3px;
+}
+.yes_line_false{
+    fill:none;
+    stroke: #ffd083;
+    stroke-dasharray:30;
+    --strike_dash: 30;
+    stroke-dashoffset: var(--strike_dash);
+    transition:--strike_dash 0.5s;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:3px;
+}
+.yes_line_def {
+    fill:none;
+    stroke: #677bff;
+    stroke-dasharray:30;
+    stroke-dashoffset: var(--strike_dash);
+    transition:--strike_dash 0.5s;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:3px;
+}
